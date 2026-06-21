@@ -7,8 +7,18 @@ document.addEventListener("DOMContentLoaded", initializeSlider);
 function initializeSlider(){
   if(slides.length > 0){
     slides[slideIndex].classList.add("displaySlide");
-    intervalId = setInterval(nextSlide, 5000);
+    intervalId = setInterval(autoSlide, 5000);
   }
+}
+
+function autoSlide(){
+  slideIndex++;
+  showSlide(slideIndex);
+}
+
+function resetInterval(){
+  clearInterval(intervalId);
+  intervalId = setInterval(autoSlide, 5000);
 }
 
 function showSlide(index){
@@ -22,6 +32,7 @@ function showSlide(index){
   slides.forEach(slide => {
     slide.classList.remove("displaySlide");
   });
+
   slides[slideIndex].classList.add("displaySlide");
 }
 
