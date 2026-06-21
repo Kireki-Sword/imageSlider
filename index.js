@@ -39,7 +39,7 @@ function showSlide(index){
 function prevSlide(){
   slideIndex--;
   showSlide(slideIndex);
-  resetInterval();
+  clearInterval(intervalId); // stop auto-slide
 }
 
 function nextSlide(){
