@@ -43,11 +43,11 @@ body{
 }
 
 .prev{
-    left: -30px;   /* slightly outside */
+    left: -40px;   /* slightly outside */
 }
 
 .next{
-    right: -30px;
+    right: -40px;
 }
 
 
