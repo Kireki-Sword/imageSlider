@@ -10,7 +10,7 @@ body{
     width: 400px;      /* slider width */
     height: 600px;     /* slider height */
     margin: 20px auto; /* center on page */
-    overflow: hidden;
+    overflow: visible;
 }
 
 .slides{
@@ -43,12 +43,13 @@ body{
 }
 
 .prev{
-    left: 10px;
+    left: -30px;   /* slightly outside */
 }
 
 .next{
-    right: 10px;
+    right: -30px;
 }
+
 
 @keyframes fade{
     from{
