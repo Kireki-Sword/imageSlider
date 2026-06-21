@@ -26,12 +26,13 @@ function showSlide(index){
 }
 
 function prevSlide(){
-  clearInterval(intervalId);
   slideIndex--;
   showSlide(slideIndex);
+  resetInterval();
 }
 
 function nextSlide(){
   slideIndex++;
   showSlide(slideIndex);
+  resetInterval();
 }

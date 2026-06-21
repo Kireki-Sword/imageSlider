@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    text-align: center;
+    background-color: #FAF9F6;
 }
 
 .slider{
@@ -55,4 +57,17 @@ body{
     to{
         opacity: 1;
     }
+}
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+    font-family: Georgia, serif;
+    color: #4a2c2a;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 3px solid #4a2c2a;
+    display: inline-block;
+    padding-bottom: 10px;
 }
